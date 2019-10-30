@@ -48,6 +48,8 @@ public class QuicklyTranslateAction extends AnAction {
                             document.setReadOnly(false);
                             document.setText(replaceContent);
                         });
+                        CommandProcessor.getInstance().markCurrentCommandAsGlobal(getEventProject(e));
+
                     });
                 }
             });
