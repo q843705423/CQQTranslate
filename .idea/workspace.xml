@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="275c7384-03f6-4296-9a9d-7cb9ffdc94a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuicklyTranslate.zip" beforeDir="false" afterPath="$PROJECT_DIR$/QuicklyTranslate.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cqq/action/QuicklyTranslateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cqq/action/QuicklyTranslateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cqq/util/TranslateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cqq/util/TranslateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,17 +21,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/cqq/action/QuicklyTranslateAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="761">
+              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/application/Application.class">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="161">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -68,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cqq/util/TranslateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="-997">
+              <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -128,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/com/cqq/util/FontUtil.java" />
         <option value="$PROJECT_DIR$/src/com/cqq/util/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/com/cqq/util/QuicklyTranslateAction.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/cqq/document/D.java" />
         <option value="$PROJECT_DIR$/src/com/cqq/document/DocumentWrite.java" />
         <option value="$PROJECT_DIR$/src/com/cqq/entity/Data.java" />
@@ -137,6 +134,7 @@
         <option value="$PROJECT_DIR$/../../../../../environment/jdk/src.zip!/java/lang/StringBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/cqq/util/TranslateUtil.java" />
         <option value="$PROJECT_DIR$/src/com/cqq/action/QuicklyTranslateAction.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -147,7 +145,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -164,6 +162,17 @@
             <path>
               <item name="QuicklyTranslate" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuicklyTranslate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuicklyTranslate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuicklyTranslate" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuicklyTranslate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuicklyTranslate" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QuicklyTranslate" type="b2602c69:ProjectViewProjectNode" />
@@ -277,23 +286,24 @@
       <workItem from="1572413741388" duration="133000" />
       <workItem from="1572413940749" duration="86000" />
       <workItem from="1572414090589" duration="583000" />
+      <workItem from="1572429699748" duration="177000" />
+      <workItem from="1575269962654" duration="644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14167000" />
+    <option name="totallyTimeSpent" value="14988000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.26812366" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.27345416" />
       <window_info id="JRebel" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32925472" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.54957354" weight="0.33853006" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="3" />
@@ -305,11 +315,11 @@
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Message" order="10" />
       <window_info anchor="bottom" id="Find" order="11" />
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.59115136" weight="0.3986637" />
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.5895522" visible="true" weight="0.3986637" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" />
-      <window_info anchor="bottom" id="Run" order="16" sideWeight="0.4088486" side_tool="true" weight="0.3986637" />
+      <window_info anchor="bottom" id="Run" order="16" sideWeight="0.41044775" side_tool="true" visible="true" weight="0.3986637" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -390,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cqq/util/FontUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -446,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cqq/util/TranslateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../../../environment/jdk/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29854">
@@ -481,10 +477,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cqq/util/TranslateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cqq/action/QuicklyTranslateAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="761">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
         </state>
       </provider>
     </entry>
