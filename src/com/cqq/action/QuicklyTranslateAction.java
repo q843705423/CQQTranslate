@@ -10,13 +10,11 @@ import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.command.CommandProcessor;
 import com.intellij.openapi.editor.Caret;
 import com.intellij.openapi.editor.CaretModel;
-import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.ui.Messages;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
-import java.util.Objects;
 
 public class QuicklyTranslateAction extends AnAction {
 
@@ -40,13 +38,12 @@ public class QuicklyTranslateAction extends AnAction {
                 if (chinese.isEmpty()) {
                     Messages.showErrorDialog("找不到翻译的结果", APPLICATION);
                 } else {
-                    String replaceContent = content.substring(0, start) + chinese.get(0) + content.substring(end);
+//                    String replaceContent = content.substring(0, start) + chinese.get(0) + content.substring(end);
                     CommandProcessor.getInstance().runUndoTransparentAction(() -> {
+
                         Application app = ApplicationManager.getApplication();
                         app.runWriteAction(() -> {
-                            Document document = Objects.requireNonNull(e.getData(PlatformDataKeys.EDITOR)).getDocument();
-                            document.setReadOnly(false);
-                            document.setText(replaceContent);
+                            editor.getDocument().replaceString(start, end, chinese.get(0));
                         });
                         CommandProcessor.getInstance().markCurrentCommandAsGlobal(getEventProject(e));
 
