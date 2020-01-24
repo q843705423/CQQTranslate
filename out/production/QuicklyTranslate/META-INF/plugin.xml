@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>com.your.treadata.unique.plugin.CQQTranslate</id>
+    <name>CQQTranslate</name>
+    <version>1.0</version>
+    <vendor email="843705423@qq.com" url="nothing">teradata</vendor>
+
+    <description><![CDATA[
+      nothing to say
+    ]]></description>
+
+    <change-notes><![CDATA[
+      great for myself
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+
+    <actions>
+        <action id="com.cqq.action.QuicklyTranslateAction" class="com.cqq.action.QuicklyTranslateAction"
+                text="CQQTranslate" description="CQQTranslate">
+        </action>
+    </actions>
+</idea-plugin>
