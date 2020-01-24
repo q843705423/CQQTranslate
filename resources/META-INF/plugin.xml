@@ -7,6 +7,7 @@
     <description><![CDATA[
       nothing to say
     ]]></description>
+    <depends>com.intellij.modules.lang</depends>
 
     <change-notes><![CDATA[
       great for myself

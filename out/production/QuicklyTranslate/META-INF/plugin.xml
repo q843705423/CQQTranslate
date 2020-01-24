@@ -7,6 +7,10 @@
     <description><![CDATA[
       nothing to say
     ]]></description>
+<<<<<<< HEAD
+=======
+    <depends>com.intellij.modules.lang</depends>
+>>>>>>> 83d477d9e0c9d296c87bb23e6aafd2bf0cfb4ca4
 
     <change-notes><![CDATA[
       great for myself

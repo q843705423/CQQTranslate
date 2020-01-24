@@ -5,13 +5,11 @@ import com.cqq.entity.DataUnit;
 import com.cqq.entity.TranslateData;
 import com.yourkit.util.Strings;
 
-import javax.naming.ldap.HasControls;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,8 +20,20 @@ public class TranslateUtil {
     private static final String SPACE = " ";
 
     public static void main(String[] args) {
-        List<String> helloWorld = getTranslateList("private static boolean isEnglish(String word) {");
-        System.out.println(helloWorld.get(0));
+        try {
+//            String keyWord = URLDecoder.decode("%E6%96%87%E6%A1%A3", "gb2312");
+            String keyWord = URLDecoder.decode("%E6%96%87%E6%A1%A3", "utf-8");
+            System.out.println(keyWord);
+
+            String urlStr = URLEncoder.encode("\r\n文档", "utf-8");
+            System.out.println(urlStr);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        List<String> hello = TranslateUtil.getTranslateList(";\r\nhello world \r\n");
+        System.out.println(hello);
+//        List<String> helloWorld = getTranslateList("private static boolean isEnglish(String word) {");
+//        System.out.println(helloWorld.get(0));
 
 
     }
@@ -49,8 +59,9 @@ public class TranslateUtil {
 
     /**
      * This method is to translate word. if word is chinese, it will be translated into english. otherwise, it will be the opposite.
+     *
      * @param word
-     * @return
+     * @return R
      * @throws IOException
      */
     private static String translate(String word) throws IOException {
@@ -63,12 +74,16 @@ public class TranslateUtil {
             to = temp;
         } else {
             word = splitWord(word);
-
         }
-        String sword = word;
+        System.out.println(String.format("%s to %s", from, to));
+//        String sword = word;
+        //TODO
+        String sword = URLEncoder.encode(word, "utf-8");
+/*
         while (sword.contains(" ")) {
             sword = sword.replace(" ", "%20");
         }
+*/
 
         String salt = "1435660288";
         String sign = calculateSign(appID, word, salt, "dxg8tr4ooLWOfA3fgtCZ");//"f9d9a06f109e155c6405243d73ff2c52";
@@ -113,9 +128,10 @@ public class TranslateUtil {
     }
 
     private static boolean isEnglish(String word) {
-        return word.chars().allMatch(c -> set.contains(((char) c) + ""));
+        return !JudgeContentIsChinese.containChinese(word);
 
     }
+
 
     public static List<String> getTranslateList(String text) {
         try {
